@@ -128,5 +128,7 @@ return [
         ],
 
     ],
+    'ensureUserIsClient' => \App\Http\Middleware\EnsureUserIsClient::class,
+
 
 ];

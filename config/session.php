@@ -18,6 +18,8 @@ return [
     |
     */
 
+    'ensureUserIsClient' => \App\Http\Middleware\EnsureUserIsClient::class,
+
     'driver' => env('SESSION_DRIVER', 'database'),
 
     /*

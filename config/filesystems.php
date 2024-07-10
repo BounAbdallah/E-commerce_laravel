@@ -27,6 +27,8 @@ return [
     | Supported drivers: "local", "ftp", "sftp", "s3"
     |
     */
+    'ensureUserIsClient' => \App\Http\Middleware\EnsureUserIsClient::class,
+
 
     'disks' => [
 

@@ -1,0 +1,187 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+header nav {
+    background-color: #1e4c72;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.nav-links .cart .badge {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.banner {
+    background-image: url('{{ asset("images/banner-img.png") }}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.banner .btn-custom {
+    background-color: #1e4c72;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container .row.categorie {
+    margin-top: 50px;
+}
+
+.container .row.categorie .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .row.categorie .category-list {
+    margin-top: 20px;
+}
+
+.category-list h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#categoryButtons .btn-custom {
+    background-color: #1e4c72;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.produits {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.produits .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produits .card .card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.produits .card .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produits .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produits .card .overlay:hover {
+    opacity: 1;
+}
+
+.produits .card .details-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.produits .card .card-body {
+    padding: 15px;
+}
+
+.produits .card .card-body h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.produits .card .card-body p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.produits .card .badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: #1e4c72;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer img {
+    max-width: 100px;
+}

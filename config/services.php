@@ -14,6 +14,8 @@ return [
     |
     */
 
+    'ensureUserIsClient' => \App\Http\Middleware\EnsureUserIsClient::class,
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],

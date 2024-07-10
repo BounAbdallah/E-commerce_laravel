@@ -109,4 +109,6 @@ return [
         'table' => 'failed_jobs',
     ],
 
+    'ensureUserIsClient' => \App\Http\Middleware\EnsureUserIsClient::class,
+
 ];
